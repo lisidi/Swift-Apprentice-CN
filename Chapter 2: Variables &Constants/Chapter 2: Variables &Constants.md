@@ -39,7 +39,7 @@ let pi: Double = 3.14159
 一旦你已经声明一个常量，就不能更改其数据。例如，考虑下面的代码:
 
 ``` 
-￼let number: Int = 10
+let number: Int = 10
 number = 0
 ```
 
@@ -181,4 +181,73 @@ let x: Int = coordinates.0
 let y: Int = coordinates.1
 ```
 
-你可以通过他们在元组中的位置来引用他们，所以在此示例中，x 等于 2 , y 将等于 3。
+你可以通过他们在元组中的位置来引用他们，所以在此示例中: x 等于 2 , y 将等于 3。
+
+``` 
+注意：在计算机编程中从零开始是很常见的做法，被称为第0个索引。你会在第10章“数组”中再次看到。
+```
+
+在前面的例子中，可能不是显而易见的一点就是: 第一个值，index为0 ，是x坐标。这第二个值，index为1 ，是y坐标。
+
+这就是另一个证明, 关于为什么我们总要以一个避免混乱的方式去命名变量。
+
+幸运的是，Swift允许你命名一个元组中的单独的一部分, 帮助你明确每一部分代表的是什么。例如:
+
+``` 
+let coordinatesNamed: (x: Int, y: Int) = (2, 3)
+```
+
+在这里，通过一个标签声明了coordinatesNamed元组中每部分的数据类型。
+
+然后，当你想要访问元组中的每一部分时，通过名称访问它:
+
+``` 
+let x: Int = coordinatesNamed.x
+let y: Int = coordinatesNamed.y
+
+```
+
+这更加清晰易懂。往往这也更容易去命名你的元组中的成员。
+
+如果你想同时访问元组中的每一个成员，你还可以使用短语法来变得更轻松:
+
+``` 
+let coordinates3D: (x: Int, y: Int, z: Int) = (2, 3, 1)
+let (x, y, z) = coordinates3D
+
+```
+
+声明3个常量并依次赋值。该代码相当以下内容:
+
+``` 
+let coordinates3D: (x: Int, y: Int, z: Int) = (2, 3, 1)
+let x = coordinates3D.x
+let y = coordinates3D.y
+let z = coordinates3D.z
+
+```
+
+如果您想要省略元组中每个确定的元素，你可以用下划线替代。例如，如果你要进行2D计算，想要忽略 coordinates3D 中的 z 坐标，你可以这么写:
+
+``` 
+let (x, y, _) = coordinates3D
+```
+
+这行代码只声明 x 和 y。这个_ ，意味着你现在忽略了这一部分。
+
+``` 
+注意:现在你应该发现在Swift中你可以通过下划线 _ ,来省略一个值.
+```
+
+#### Mini-exercises
+
+1.声明一个常量元组,其中包括三个Int值, 一个Double值。
+
+并且用这个元组表示那一年那一月那一天的温度(整好4个值)。
+
+2.通过给元组中每一部分加以相关联的名称,来改变元组。month, day, year and averageTemperature。
+
+3.读出day和averageTemperature的值, 你需要使用_来省略month和year。
+
+4.到现在你也只是见过常量元组, 但是你也可以创建变量元组将 let 换成 var ,来改变你在练习中创建的元组, 现在给元组中的averageTemperature赋个新值。
+
