@@ -1,4 +1,4 @@
-# Chapter 2: Variables &Constants
+# Chapter 2: Variables &Constants 变量和常量
 
 [TOC]
 
@@ -6,7 +6,7 @@
 
 在这一章，你会发现常量、 变量、 类型和元组，并学习如何声明它们、 命名它们和更改它们。你还将了解类型推导，Swift的最重要特征之一，使你的编码容易得多。
 
-## Naming data
+## Naming data 命名数据
 
 简单来说，计算机编程就是操作数据。请记住，你在屏幕上看到的一切都可以简化成数字发送给 CPU 。有时你处理的数据是各种类型的数字，但还有时数据可能是更复杂的形式，如文本、 图像和集合。
 
@@ -14,7 +14,7 @@
 
 在这一章，你将了解一些基本的类型，还有其它的类型在本书的剩余部分。
 
-#### Constants
+#### Constants 常量
 
 看看这本书的第一位:
 
@@ -57,7 +57,7 @@ number = 0
 
 你甚至可以使用常量来定义一个人的年龄。即使他们的年龄将改变，而你可能却只是关心他们在这特别时刻的年龄。
 
-#### Variables
+#### Variables 变量
 
 通常您想更改名字后面的数据。例如，如果你要记录你的银行存款，你可以使用变量，而不是一个常量。
 
@@ -91,7 +91,7 @@ variableNumber = 1_000_000
 
 results sidebar将为每一行显示一个相关的结果，如果代码结果存在的话。至于变量或常量，右侧的结果都是个新值，不管你是声明的常量，或声明变量或重新分配的变量。
 
-#### Naming
+#### Naming 命名
 
 为你的变量和常量总是尽量选择有意义的名称。
 
@@ -115,7 +115,7 @@ results sidebar将为每一行显示一个相关的结果，如果代码结果�
 
 像这些特殊字符可能比 Swift 代码会产生更多感觉;  你将学习更多关于 Unicode 在第 4 篇，"Strings"。
 
-#### Type conversion
+#### Type conversion 类型转换
 
 有时你想将数据的格式。幼稚的方式会像这样:
 
@@ -147,7 +147,17 @@ integer = Int(decimal)
 注意: 在这种情况下，分配的小数到整数，精度会损失: 整数变量integer是12而不是12.5。这就是显式的重要性。Swift 想要确保你知道你在做什么，并且通过执行类型转换你可能最终会丢失数据。
 ```
 
-## Tuples
+#### Mini-exercises 迷你练习
+
+如果你还没有自己独自使用Xcode编码，现在就是时候创建一个新的playground来做一些练习。
+
+1.声明一个Int类型的常量myAge，并给其赋值你的年龄。
+
+2.声明一个Double类型的变量averageAge。初始化，给其赋myAge值；你需要使用显式类型转换做到这一点。然后，然后给其赋值，值为你得年龄和我的年龄的平均数。通过你自己的脑算就行—在接下来得篇章你会使用Swift计算。
+
+
+
+## Tuples 元组
 
 有时数据是成对或者三个一副。一个例子就是是一对 (x，y) 平面坐标。同样，一套 3D 坐标是由 x 值、 y 值和 z 值组成。
 
@@ -239,7 +249,7 @@ let (x, y, _) = coordinates3D
 注意:现在你应该发现在Swift中你可以通过下划线 _ ,来省略一个值.
 ```
 
-#### Mini-exercises
+#### Mini-exercises 迷你练习
 
 1.声明一个常量元组,其中包括三个Int值, 一个Double值。
 
@@ -250,4 +260,114 @@ let (x, y, _) = coordinates3D
 3.读出day和averageTemperature的值, 你需要使用_来省略month和year。
 
 4.到现在你也只是见过常量元组, 但是你也可以创建变量元组将 let 换成 var ,来改变你在练习中创建的元组, 现在给元组中的averageTemperature赋个新值。
+
+## Type inference 类型推导
+
+每次看到的已经声明的常量和变量都有一个关联的类型
+
+``` 
+let coordinates3D: (x: Int, y: Int, z: Int) = (2, 3, 1)
+let (x, y, z) = coordinates3D
+
+```
+
+第二行并没有声明x, y, z的类型为Int。那Swift是怎么知道它们是Int类型的呢？
+
+通过读代码，很清晰地知道第二行中的3个常量是Int类型的。因为你已经声明了一个包含3个Int值得元组。
+
+原来Swift编译器可以做到这个过程的推导。你不需要告诉这个类型—它就能自己指出来。嗯，优雅！:]
+
+碰巧地是，除了元组你都可以省略类型。事实上，在大多数地方你都可以省略类型，因为Swift已经知道啦！
+
+例如，考虑下面这个常量的声明：
+
+``` 
+  let typeInferredInt = 42
+
+```
+
+右手边的值是integer类型的。Swift也知道。因此它推断常量的类型应该是Int 。这个过程就叫做**类型推导**，这是Swift语言威力中一个关键的部分。
+
+有时对于检查一个被推导过的变量或者常量的类型来说是很有用的。在playground中，你可以按住Option键，并点击这个变量或者常量的名字。Xcode将显示一个弹出视图：
+
+![Snip20151118_1](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151118_1.png)
+
+Xcode会告诉你这个被推导过的类型，它是怎么做的？它通过给你这一个声明，这个声明是“在没有其他类型的情况下，你将必须使用的”。
+
+对于其他类型也一样：
+
+``` 
+let typeInferredDouble = 3.14159
+```
+
+再次点击Option键，看看： ![Snip20151118_2](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151118_2.png)
+
+从这里看，你就知道类型推导并不是多么神奇。Swift 仅是做了这个用人脑也能很容易做的事情。如果编程语言没有类型推导会很繁琐，因为每次声明变量或常量，你都要指定显式地类型。
+
+``` 
+注意：在接下来的篇节里，你将会学到更多的复杂的类型，这些类型Swift无法自动推导出。这只是非常少见的情况，在本书中的代码大部分会使用类型推导，除非我们想要强调这个类型。
+```
+
+#### Mini-exercises 迷你练习
+
+1.声明一个元组包含2个integers，但是省略类型。点击Option键，确定类型的确是(Int, Int) 。
+
+2.读出上面元组中第一个值，并再一次省略这个常量的类型。点击Option键，确定类型的确是Int。
+
+## Key points 关键点
+
+- 常量和变量用来命名数据。
+- 一旦你声明一个常量，你就不能改变其数据，但是你可以改变变量的数据。
+- 你总是应该给常量或者变量一个有意义的命名，避免以后难以想起，使得自己头疼。
+- 你可以使用元组将一组数据转为单一数据类型。
+- 类型推导可以允许你省略类型。
+
+
+
+## Where to go from here? 然后去哪？
+
+现在你已经了解了变量和常量，是时候关注存储的数据了！在接下来多的两个篇节，你将会两个更常见的数据类型—字符串和数字--还有如何使用它们。
+
+## Challenges 挑战
+
+在离开之前，还有些挑战来测试你关于常量和变量的知识。你可以尝试在playground编码来验证你的答案。
+
+#### Challenge A: You be the compiler 挑战A：你就是编译器
+
+下面这两块代码那个是对的？
+
+``` 
+// 1
+var age = 25
+age = 30
+
+// 2
+let age = 25
+age = 30
+```
+
+这个代码对吗？
+
+``` 
+let tuple: (day: Int, month: Int, year: Int) = (15, 8, 2015)
+let day = tuple.Day
+
+```
+
+Challenge B: Predict the outcome 挑战B：预测输出
+
+value的类型是什么？
+
+``` 
+let tuple = (100, 1.5, 10)
+let value = tuple.1
+```
+
+month的值是什么？
+
+``` 
+let tuple: (day: Int, month: Int, year: Int) = (15, 8, 2015)
+let month = tuple.month
+
+```
 
