@@ -354,7 +354,7 @@ let day = tuple.Day
 
 ```
 
-Challenge B: Predict the outcome 挑战B：预测输出
+#### Challenge B: Predict the outcome 挑战B：预测输出
 
 value的类型是什么？
 
@@ -370,4 +370,3 @@ let tuple: (day: Int, month: Int, year: Int) = (15, 8, 2015)
 let month = tuple.month
 
 ```
-
