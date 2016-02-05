@@ -12,3 +12,5 @@
 
 完结时，最终会输出PDF版本。
 
+www.hisidi.com 连载
+
