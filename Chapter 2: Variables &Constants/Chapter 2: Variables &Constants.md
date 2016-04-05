@@ -51,7 +51,7 @@ number = 0
 
 在Xcode中，你将会看到错误以这种方式来呈现：
 
- ![Snip20151117_12](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151117_12.png)
+ ![Snip20151117_12](http://7xoguz.com1.z0.glb.clouddn.com/b2/pngSnip20151117_12.png)
 
 常量对于一个不可改变的值是十分有用的。例如，如果你正在模型化一架飞机，要记录座位总数，你可以使用一个常量。
 
@@ -87,7 +87,7 @@ variableNumber = 1_000_000
 
 这是介绍results sidebar的好时机。当你输入上面的代码到playground时，你会看到在右侧results sidebar中的每一行显示了 variableNumber 的当前值：
 
- ![Snip20151117_13](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151117_13.png)
+ ![Snip20151117_13](http://7xoguz.com1.z0.glb.clouddn.com/b2/pngSnip20151117_13.png)
 
 results sidebar将为每一行显示一个相关的结果，如果代码结果存在的话。至于变量或常量，右侧的结果都是个新值，不管你是声明的常量，或声明变量或重新分配的变量。
 
@@ -109,9 +109,9 @@ results sidebar将为每一行显示一个相关的结果，如果代码结果�
 
 关键是要确保你再一次读代码，就会明白这些变量或常量指代的是什么。不要错误地认为你有可靠的记忆力! 在计算机编程中，过一两天再回头看以前的代码，却忘记了很多东西，这是很常见的。为你自己变得更轻松，你应该给你的变量和常量一个直观、 精确的名字。
 
-在Swift中，你甚至可以使用Unicode 字符的完全范围 。这意味着你可以这样声明一个变量:![Snip20151117_14](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151117_14.png)
+在Swift中，你甚至可以使用Unicode 字符的完全范围 。这意味着你可以这样声明一个变量:![Snip20151117_14](http://7xoguz.com1.z0.glb.clouddn.com/b2/pngSnip20151117_14.png)
 
-这可能会让你笑，但使用谨慎地使用这些特殊字符。他们很难输入并可能会让你更痛苦。![Snip20151117_15](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151117_15.png)
+这可能会让你笑，但使用谨慎地使用这些特殊字符。他们很难输入并可能会让你更痛苦。![Snip20151117_15](http://7xoguz.com1.z0.glb.clouddn.com/b2/pngSnip20151117_15.png)
 
 像这些特殊字符可能比 Swift 代码会产生更多感觉;  你将学习更多关于 Unicode 在第 4 篇，"Strings"。
 
@@ -290,7 +290,7 @@ let (x, y, z) = coordinates3D
 
 有时对于检查一个被推导过的变量或者常量的类型来说是很有用的。在playground中，你可以按住Option键，并点击这个变量或者常量的名字。Xcode将显示一个弹出视图：
 
-![Snip20151118_1](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151118_1.png)
+![Snip20151118_1](http://7xoguz.com1.z0.glb.clouddn.com/b2/pngSnip20151118_1.png)
 
 Xcode会告诉你这个被推导过的类型，它是怎么做的？它通过给你这一个声明，这个声明是“在没有其他类型的情况下，你将必须使用的”。
 
@@ -300,7 +300,7 @@ Xcode会告诉你这个被推导过的类型，它是怎么做的？它通过给
 let typeInferredDouble = 3.14159
 ```
 
-再次点击Option键，看看： ![Snip20151118_2](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 2: Variables &Constants/resource/Snip20151118_2.png)
+再次点击Option键，看看： ![Snip20151118_2](http://7xoguz.com1.z0.glb.clouddn.com/b2/pngSnip20151118_2.png)
 
 从这里看，你就知道类型推导并不是多么神奇。Swift 仅是做了这个用人脑也能很容易做的事情。如果编程语言没有类型推导会很繁琐，因为每次声明变量或常量，你都要指定显式地类型。
 

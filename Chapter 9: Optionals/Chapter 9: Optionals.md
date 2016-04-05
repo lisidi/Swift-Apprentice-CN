@@ -30,7 +30,9 @@ var occupation: String = "Software Developer & Author"
 
 一个有效的值，用来表示一个值缺失，被称为一个 sentinel value。在前面的实例中你用的空字符串就是。
 
-![Snip20151117_20](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 9: Optionals/resource/Snip20151117_20.png)让我们看看另一个例子。你写一段代码去从服务器请求数据而且你使用一个变量来存储服务器返回的error代码:
+![Snip20151117_20](http://7xoguz.com1.z0.glb.clouddn.com/b9/pngSnip20151117_20.png)
+
+让我们看看另一个例子。你写一段代码去从服务器请求数据而且你使用一个变量来存储服务器返回的error代码:
 
 ``` 
 var errorCode: Int = 0
@@ -40,7 +42,7 @@ var errorCode: Int = 0
 
 就像occupation的空字符串一样，这是有效的，但它可能给程序员造成混乱。0 在未来也许是错误代码呢。无论哪种方式，你都不能完全放心相信这没有错误。
 
-![Snip20151117_22](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 9: Optionals/resource/Snip20151117_22.png)
+![Snip20151117_22](http://7xoguz.com1.z0.glb.clouddn.com/b9/pngSnip20151117_22.png)
 
 在这两个例子中，如果有一种特殊的类型可以表示值缺失，那么会更好。当一个值要么存在要么缺失，这会是明确的显式的。
 
@@ -56,7 +58,7 @@ Optionals是Swift的解决问题的办法，可以呈现一个值和值的缺失
 
 把Optionals看作为一个盒子: 它要么包含一个值，要么没有。当它不包含值时，就可以说它包含nil。盒子本身始终存在。总是在那里让你去打开或者观察里面。
 
- ![Snip20151117_23](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 9: Optionals/resource/Snip20151117_23.png)
+ ![Snip20151117_23](http://7xoguz.com1.z0.glb.clouddn.com/b9/pngSnip20151117_23.png)
 
 一个字符串或整数，另一方面，没有这个箱子在它周围。相反总是有一个值，例如"hello"或 42。记住，确保非可选类型都有确切值。
 
@@ -74,7 +76,7 @@ Optionals是Swift的解决问题的办法，可以呈现一个值和值的缺失
 
 此关系图可帮助你以可视化形式，看看发生了什么:
 
- ![Snip20151117_24](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 9: Optionals/resource/Snip20151117_24.png)
+ ![Snip20151117_24](http://7xoguz.com1.z0.glb.clouddn.com/b9/pngSnip20151117_24.png)
 
 可选盒子总是存在的。当你将 100 赋给变量时，你填写盒子中的值。当你分配给该变量的nil时，你清空盒子。
 

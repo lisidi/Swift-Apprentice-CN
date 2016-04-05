@@ -82,7 +82,7 @@ multiplyClosure = {
 
 现在让我们看看这个多么有用。
 
-![Snip20151117_19](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 8: Closures/resource/Snip20151117_19.png)考虑下面代码：
+![Snip20151117_19](http://7xoguz.com1.z0.glb.clouddn.com/b8/pngSnip20151117_19.png)考虑下面代码：
 
 ``` 
 func operateOnNumbers(a: Int, _ b: Int,

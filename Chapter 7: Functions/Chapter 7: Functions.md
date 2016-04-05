@@ -32,7 +32,7 @@ My name is Matt Galloway.
 
 如果您怀疑自己已经使用过一个函数在以前的章节中，那么你想的是对的！print，将你编写的代码打印到控制台，这的确是一个函数。这让我们很好地进入下一环节，你将学习如何将数据传递到函数和再从函数中拿回数据。
 
- ![Snip20151117_17](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 7: Functions/resource/Snip20151117_17.png)
+ ![Snip20151117_17](http://7xoguz.com1.z0.glb.clouddn.com/b7/pngSnip20151117_17.png)
 
 #### Function parameters
 
@@ -110,7 +110,7 @@ printMultipleOf(4, 2)
 
 在本例中，第二个参数没有外部变量名，就像第一个参数一样。但使用下划线明智。但一个复杂的函数，在没有外部变量名时去持有多个参数就会变得更加复杂和笨拙。试想一下，如果一个函数用了五个参数！
 
- ![Snip20151117_18](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 7: Functions/resource/Snip20151117_18.png)
+ ![Snip20151117_18](http://7xoguz.com1.z0.glb.clouddn.com/b7/pngSnip20151117_18.png)
 
 你也可以给参数默认值：
 

@@ -16,7 +16,9 @@ numbers.removeLast()
 let newArray = numbers // [1,  2]
 ```
 
-![Snip20151117_26](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 18: Methods/resource/Snip20151117_26.png)像removeLast( )这样的方法帮助你在命名类型中控制数据。
+![Snip20151117_26](http://7xoguz.com1.z0.glb.clouddn.com/b18/pngSnip20151117_26.png)
+
+像removeLast( )这样的方法帮助你在命名类型中控制数据。
 
 ### Comparing methods to computed properties
 

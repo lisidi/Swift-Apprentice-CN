@@ -32,7 +32,7 @@ struct Contact {
 
 你可以使用这个结构体一遍又一遍，帮你建立联系人的数组，每个都有不同的值。要存储的成员变量是一个人的全名和电子邮件地址。
 
- ![Snip20151117_25](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 17: Properties/resource/Snip20151117_25.png)
+ ![Snip20151117_25](http://7xoguz.com1.z0.glb.clouddn.com/b17/pngSnip20151117_25.png)
 
 这些是Contact结构体的属性。你为每一个联系人提供数据类型，但并不分配一个默认值，因为你想在初始化的时候分配值。毕竟，对于Contact的每一个实例，他们的值都是不同的。
 

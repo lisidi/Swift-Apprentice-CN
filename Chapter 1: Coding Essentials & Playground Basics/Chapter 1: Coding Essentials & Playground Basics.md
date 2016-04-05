@@ -10,13 +10,13 @@
 
 这可能令你感到很惊讶，电脑本身是台相当简单的机器。电脑的心脏是一个中央处理单元（ CPU ） 。这实质上是一个数学机器。它可以执行加法，减法，和其他关于数字的算术运算。当你操作电脑的时候，你看见的所有东西都是建立在CPU每秒百万次运算的情况下所得出的。只是一些数字就能做到，是不是很神奇？
 
- ![Snip20151117_2](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_2.png)
+ ![Snip20151117_2](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_2.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:FnbIEq-MWl8E-ZV73xPA2-IuKc0)
 
 这些正在运行的数字存储在CPU的一个小的存储器单元上，这个存储器单元叫做寄存器。CPU能够将数字从计算机的 内存RAM中读入到寄存器中。它也能将数字从寄存器读写回内存RAM中。这允许 CPU 处理大量的数据，避免挤满寄存器的空间。
 
 这里是一个图，描述这是如何工作的:
 
- ![Snip20151117_1](/Users/lisidi/Desktop/Swift apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_1.png)
+ ![Snip20151117_1](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_1.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:w6zLDjNGTTM7oGiXPzi1rjdcd-g)
 
 CPU 从 RAM 取值传到寄存器中，并在数学单元中计算这些值，然后将保存结果返回到另一个寄存器中。
 
@@ -36,7 +36,7 @@ CPU 从 RAM 取值传到寄存器中，并在数学单元中计算这些值，�
 
 这个基数为10的数字423包含三个单元：
 
- ![Snip20151117_3](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_3.png)
+ ![Snip20151117_3](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_3.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:e5QxGi-3kFWLS19NNAz0wWkIc1Y)
 
 在基数为10的系统中，一个数的每个位可以是0 ，1，2 ，3，4 ，5，6 ，7，8或9的值，给出总共10个可能的值。是的，这就是为什么它被称为基数为10！
 
@@ -60,7 +60,7 @@ CPU 从 RAM 取值传到寄存器中，并在数学单元中计算这些值，�
 
 这是1101二进制的表示:
 
- ![Snip20151117_4](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_4.png)
+ ![Snip20151117_4](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_4.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:KtnW8J-61-nI89CrW-2gjlHsanA)
 
 在基数为10的系统中，每个位值增加的因数是10：1，10，100，1000等等。这里你可以看到每个位值增加的因数是2： 1，2，4，8，16等等。一般的规则是，从右到左乘以2.
 
@@ -77,7 +77,9 @@ CPU 从 RAM 取值传到寄存器中，并在数学单元中计算这些值，�
 
 如你看到的，423转换为二进制是110100111。
 
-二进制数的数字的计算机术语是位。八位组成一个字节。四位叫半字节，一种文字游戏，展示了老计算机科学家教师的幽默感。![Snip20151117_5](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_5.png)
+二进制数的数字的计算机术语是位。八位组成一个字节。四位叫半字节，一种文字游戏，展示了老计算机科学家教师的幽默感。
+
+![Snip20151117_5](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_5.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:9LITtMQnA7HYWXJsKBFM3AVlUkY)
 
 计算机有限的内存空间意味着它通常只可以处理一定长度的数字。例如，每个寄存器，通常是 32 或 64 位的长度，这就是为什么我们说的 32 位和 64 位 CPU。
 
@@ -100,7 +102,7 @@ CPU 从 RAM 取值传到寄存器中，并在数学单元中计算这些值，�
 
 这里是一个基于16进制的例子，像以前一样使用相同的格式:
 
- ![Snip20151117_6](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_6.png)
+ ![Snip20151117_6](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_6.png?attname=&e=1448033442&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:UAcybIZ-4rXrAJlnk0qrVAWrRfg)
 
 首先注意到的是，你可以使得16进制数看起来像个单词。这让你可以有一点点小乐趣。: ]
 
@@ -145,7 +147,7 @@ c0de = 1100 0000 1101 1110
 
 这就所谓的伪代码。它不是用一个有效的计算机编程语言编写，但它表示出了你想要使用的算法。在这个例子，算法拿到一张照片，调整它的大小、 应用滤镜，然后打印它。这是一种相对简单的算法，但它仍不失为一种算法!
 
- ![Snip20151117_7](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_7.png)
+ ![Snip20151117_7](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_7.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:dEzxCXqnj9sFZQBjqhW2OkQc9BU)
 
 Swift 代码就是这样: 一步一步的计算机指令列表。当你通读这本书的过程中，这些指令会变得越来越复杂，但原理是相同的:  你只需告诉计算机要做什么，一次一步。
 
@@ -169,7 +171,7 @@ Xcode 有一个很方便的功能，称为**Playground**。可以让你快速地
 
 从这个欢迎界面来看，你可以快速进入playground，通过单击**Get started with a playground**。现在点击一下， Xcode 将带你进入一个新的界面:
 
- ![Snip20151117_9](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_9.png)
+ ![Snip20151117_9](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_8.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:qH-lX9-wLJ4D0XMYAW1XXw4U-1A)
 
 从这里，你可以命名playground，并选择你所需要的开发平台。名称是只是装饰，供你自己使用;  当你创建你的playground，自由地选择名称，将会帮助你记住它们。例如，当您正在阅读第二章时，你可能想要命名你的playground为Chapter2。
 
@@ -179,7 +181,7 @@ Xcode 有一个很方便的功能，称为**Playground**。可以让你快速地
 
 一旦你选择了名字和平台，点击Next，然后保存playground。Xcode 呈现你眼前playground，像这样:
 
-  ![Snip20151117_11](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_11.png)
+  ![Snip20151117_11](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_9.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:Hxra9VD7x-FEynS9qDYTE1WilcE)
 
 新的playgrounds在开始时不是空的，有一些基本的代码。别担心 — 你会很快了解这些代码的含义。
 
@@ -187,7 +189,7 @@ Xcode 有一个很方便的功能，称为**Playground**。可以让你快速地
 
 乍一看，一个playground可能看起来像一个很奇特的文本编辑器。嗯，一些消息要告诉你: 就是这个，哈哈!
 
-![Snip20151117_10](/Users/lisidi/Desktop/Swift Apprentice CN/Chapter 1: Coding Essentials & Playground Basics/resource/Snip20151117_10.png)
+![Snip20151117_10](http://7xoguz.com1.z0.glb.clouddn.com/Snip20151117_11.png?attname=&e=1448027447&token=dxuI1PXLyMMinZ0DPNMT9FjTmLo7DeQQZ66YYk3p:aW5-Kz75rV9Z2SfL6bCXXn69GWs)
 
 下面的截图突出显示了第一个和最重要的事情，要知道: 
 
